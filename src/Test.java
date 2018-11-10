@@ -33,16 +33,16 @@ public class Test {
 				for(int i=0;i<addressTmp.length;i++) {
 					try {
 						Thread.sleep(1000);
-						InetAddress targetIp = InetAddress.getByName(addressTmp[i]);
+						InetAddress targetIp = InetAddress.getByName("172.30.4.70");
 						boolean value=targetIp.isReachable(1000);
 						if(value) {
 							System.out.println(addressTmp[i]+"-"+addressName[i]+"=>onLinePC");
 							PC_STATUS=1;
 						} else {
 							System.out.println(addressTmp[i]+"-"+addressName[i]+"=>offLinePC");
-							PC_STATUS=8;
+							PC_STATUS=0;
 						}
-						sql = "insert into pc"+String.format("%02d", PC_NUMBER)+" values(?,?)";    //insert시 인자값을 넣기 위해 사용
+						sql = "insert into pc"+String.format("%02d", i+1)+" values(?,?)";    //insert시 인자값을 넣기 위해 사용
 						PreparedStatement pst = con.prepareStatement(sql);
 						pst.setInt(1, PC_NUMBER);
 						pst.setInt(2, PC_STATUS);
