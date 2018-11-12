@@ -6,6 +6,8 @@
 #### 11/10 2:03 개별 데스크탑용 클라이언트 프로토타입 코드 완성.
 #### 11/10 19:22 테스트용 노트북에 패치 후 실행-정상적으로 작동.
 #### 11/12 14:11 데이터베이스 update 구문 추가 성공. ---Insert-Update 구분or적절한 조합 통한 코드 수정,catch 수정 필요.
+####  ~ 18:00 ~ 공유된 데이터베이스 사용자로 접속하기 위한 getConnection 수정, 수정된 getConnection 기반으로 데이터베이스 조회.
+##### - 위의 코드로 기존의 Create,Drop,Test,PingTest,Main 전체 수정_ 성공. 깃허브에 업로드__
 ### --------------
 #### mysql part
 #### 11/8 1:02 JDBC 데이터베이스 접근 오류-java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed.
@@ -23,5 +25,14 @@
 참고 __ http://dogcowking.tistory.com/154 , https://idchowto.com/?p=11068 ,  
 https://zetawiki.com/wiki/MySQL_%EC%9B%90%EA%B2%A9_%EC%A0%91%EC%86%8D_%ED%97%88%EC%9A%A9
 ##### 검색어 : mysql 외부 접속 허용
+####  ~ 18:00 ~ ---Password 설정 Identified by로 수행.--- my.ini 수정 완료, 방화벽 해지. Mysql PC간 데이터베이스 접근 테스트.
+##### - 테스트용 서버 PC에 외부 유저 설정.(notting@172...) 명령 프롬프트 상에서 액세스 시도-성공(SQL 서버 디렉토리에서 cmd 실행.)
+참고 __ http://myblog.opendocs.co.kr/archives/1591
+##### - 성공한 유저 기반으로 JAVA PingTest 예시코드 수정- 
+
+getConnection("jdbc:mysql://localhost:3306/?serverTimezone=UTC&useSSL=false &allowPublicKeyRetrieval=true","root","********");
+->getConnection("jdbc:mysql://172.30.4.70:3306/?serverTimezone=UTC&useSSL=false &allowPublicKeyRetrieval=true","notting","*********");
+##### - 성공. 깃허브에 업로드___
+					
 ### --------------
 #### android studio part
