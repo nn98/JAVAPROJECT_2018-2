@@ -18,6 +18,6 @@
 ####  ~ 14:52 홍은지 교수님꼐 질문- 해결 실패. ---차후 문성현 교수님꼐 질문
 ####  ~ 15:28 password 배제 후 전체 IP 개방형 사용자 추가 완료. ---방화벽 해지, my.ini_bind-address 제거 필요.
 참고 __ http://dogcowking.tistory.com/154 , https://idchowto.com/?p=11068 ,  
-https://zetawiki.com/wiki/MySQL_%EC%9B%90%EA%B2%A9_%EC%A0%91%EC%86%8D_%ED%97%88%EC%9A%A9   ___검색어 : mysql 외부 접속 허용
+https://zetawiki.com/wiki/MySQL_%EC%9B%90%EA%B2%A9_%EC%A0%91%EC%86%8D_%ED%97%88%EC%9A%A9  검색어 : mysql 외부 접속 허용
 ### --------------
 #### android studio part
