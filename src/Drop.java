@@ -20,8 +20,6 @@ public class Drop {
 			pst.execute();
 			pst.close();
 			}
-
-
 		}
 		catch(Exception e) {
 			e.printStackTrace();
