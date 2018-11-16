@@ -12,7 +12,7 @@
 
 
 #### mysql part
-######## login--
+###### login--
 create database PJ_PC;
 use PJ_PC;
 create table PC (
