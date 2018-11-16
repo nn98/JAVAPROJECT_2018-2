@@ -9,7 +9,17 @@
 ####  ~ 18:00 ~ 공유된 데이터베이스 사용자로 접속하기 위한 getConnection 수정, 수정된 getConnection 기반으로 데이터베이스 조회.
 ##### - 위의 코드로 기존의 Create,Drop,Test,PingTest,Main 전체 수정_ 성공. 깃허브에 업로드__
 ### --------------
+
+
 #### mysql part
+######## login--
+create database PJ_PC;
+use PJ_PC;
+create table PC (
+	PC_NUMBER INT UNSIGNED ,
+	PC_STATUS INT UNSIGNED ,
+	PC_TEMP INT UNSIGNED
+);
 #### 11/8 1:02 JDBC 데이터베이스 접근 오류-java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed.
 #### URL String에 &allowPublicKeyRetrieval=true 추가-해결.
 #### 11/8 3:11 JDBC mysql 연동 프로젝트 업로드-단순 연결+데이터베이스 목록 조회.  
@@ -34,6 +44,7 @@ https://zetawiki.com/wiki/MySQL_%EC%9B%90%EA%B2%A9_%EC%A0%91%EC%86%8D_%ED%97%88%
 getConnection("jdbc:mysql://localhost:3306/?serverTimezone=UTC&useSSL=false &allowPublicKeyRetrieval=true","root","********");
 ->getConnection("jdbc:mysql://172.30.4.70:3306/?serverTimezone=UTC&useSSL=false &allowPublicKeyRetrieval=true","notting","*********");
 ##### - 성공. 깃허브에 업로드___
+
 					
 ### --------------
 #### android studio part
