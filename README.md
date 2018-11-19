@@ -47,6 +47,10 @@ getConnection("jdbc:mysql://localhost:3306/?serverTimezone=UTC&useSSL=false &all
 #### 11/19 12:10 데이터베이스 서버용으로 재설치_ 동일 네트워크 상 데이터베이스 연결 확인. Node 터미널에서 데이터 수신 확인
 #### ~18:49 노드상 전송받은 데이터 필요한 형태로 재구축 시도 ---간헐적으로 발생하는 노드 기본설정 
 
+### --------------
+#### Node.js part
+#### 11/19 19:04 node.js이용 데이터베이스 특정값 터미널 리턴 성공
+#### 11/19 19:05~ localhost 데이터 베이스 값 출력 
 ###
 ### --------------
 #### android studio part
