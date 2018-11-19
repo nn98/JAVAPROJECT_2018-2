@@ -30,7 +30,7 @@
 #### 11/11 0:59 DBTest+PingTest 조합, getLocalHostLANAddress 활용한 개별 데스크탑용 클라이언트 프로토타입 테스트.
 #### 11/12 13:00~ mysql 외부 사용자,IP 추가 시도. password() 함수에서 지속적 오류 발생. 
 ####  ~ 14:11 클라이언트 update문 수정 성공- 정상 실행. Insert문 반복될 경우 Exception ---catch 수정 필요.
-####  ~ 14:52 홍은지 교수님꼐 질문- 해결 실패. ---차후 문성현 교수님꼐 질문
+####  ~ 14:52 홍은지 교수님께 질문- 해결 실패. ---차후 문성현 교수님께 질문
 ####  ~ 15:28 password 배제 후 전체 IP 개방형 사용자 추가 완료. ---방화벽 해지, my.ini_bind-address 제거 필요.
 참고 __ http://dogcowking.tistory.com/154 , https://idchowto.com/?p=11068 ,  
 https://zetawiki.com/wiki/MySQL_%EC%9B%90%EA%B2%A9_%EC%A0%91%EC%86%8D_%ED%97%88%EC%9A%A9
@@ -44,7 +44,9 @@ https://zetawiki.com/wiki/MySQL_%EC%9B%90%EA%B2%A9_%EC%A0%91%EC%86%8D_%ED%97%88%
 getConnection("jdbc:mysql://localhost:3306/?serverTimezone=UTC&useSSL=false &allowPublicKeyRetrieval=true","root","********");
 ->getConnection("jdbc:mysql://172.30.4.70:3306/?serverTimezone=UTC&useSSL=false &allowPublicKeyRetrieval=true","notting","*********");
 ##### - 성공. 깃허브에 업로드___
+#### 11/19 12:10 데이터베이스 서버용으로 재설치_ 동일 네트워크 상 데이터베이스 연결 확인. Node 터미널에서 데이터 수신 확인
+#### ~18:49 노드상 전송받은 데이터 필요한 형태로 재구축 시도 ---간헐적으로 발생하는 노드 기본설정 
 
-					
+###
 ### --------------
 #### android studio part
