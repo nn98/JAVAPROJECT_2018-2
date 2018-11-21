@@ -45,7 +45,7 @@ getConnection("jdbc:mysql://localhost:3306/?serverTimezone=UTC&useSSL=false &all
 ->getConnection("jdbc:mysql://172.30.4.70:3306/?serverTimezone=UTC&useSSL=false &allowPublicKeyRetrieval=true","notting","*********");
 ##### - 성공. 깃허브에 업로드___
 #### 11/19 12:10 데이터베이스 서버용으로 재설치_ 동일 네트워크 상 데이터베이스 연결 확인. Node 터미널에서 데이터 수신 확인
-#### ~18:49 노드상 전송받은 데이터 필요한 형태로 재구축 시도 ---간헐적으로 발생하는 노드 기본설정 
+#### ~18:49 노드상 전송받은 데이터 필요한 형태로 재구축 시도 ---간헐적으로 발생하는 노드 기본설정 에러 확인 해결 필요.
 
 ### --------------
 #### Node.js part
