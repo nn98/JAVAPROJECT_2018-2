@@ -1,16 +1,16 @@
 # JAVAPROJECT_2018-2
 18년도 2학기 자바프로젝트  
 <https://docs.google.com/document/d/1RZZauYzxfdyCoadlsPdHkOPiX5C98YlqXfCFtMt5Xcc/edit?usp=sharing>
-### --------------
+
+* * *
 * java part
   * 11/10 2:03 개별 데스크탑용 클라이언트 프로토타입 코드 완성.
   * 11/10 19:22 테스트용 노트북에 패치 후 실행-정상적으로 작동.
   * 11/12 14:11 데이터베이스 update 구문 추가 성공. ---Insert-Update 구분or적절한 조합 통한 코드 수정,catch 수정 필요.
   *  ~ 18:00 ~ 공유된 데이터베이스 사용자로 접속하기 위한 getConnection 수정, 수정된 getConnection 기반으로 데이터베이스 조회.
     * 위의 코드로 기존의 Create,Drop,Test,PingTest,Main 전체 수정_ 성공. 깃허브에 업로드__
-### --------------
-
-
+    
+* * *
 - mysql part
 ###### login--
 ###### create database PJ_PC;
@@ -46,11 +46,11 @@ getConnection("jdbc:mysql://localhost:3306/?serverTimezone=UTC&useSSL=false &all
     - 성공. 깃허브에 업로드___
   - 11/19 12:10 데이터베이스 서버용으로 재설치_ 동일 네트워크 상 데이터베이스 연결 확인. Node 터미널에서 데이터 수신 확인
   - ~18:49 노드상 전송받은 데이터 필요한 형태로 재구축 시도 ---간헐적으로 발생하는 노드 기본설정 에러 확인 해결 필요.
-
-### --------------
+  
+* * *
 #### Node.js part
 #### 11/19 19:04 node.js이용 데이터베이스 특정값 터미널 리턴 성공
 #### 11/19 19:05~ localhost 데이터 베이스 값 출력 
-###
-### --------------
+
+* * *
 #### android studio part
