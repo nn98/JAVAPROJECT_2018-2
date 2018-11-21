@@ -3,11 +3,11 @@
 <https://docs.google.com/document/d/1RZZauYzxfdyCoadlsPdHkOPiX5C98YlqXfCFtMt5Xcc/edit?usp=sharing>
 ### --------------
 * java part
- * 11/10 2:03 개별 데스크탑용 클라이언트 프로토타입 코드 완성.
- * 11/10 19:22 테스트용 노트북에 패치 후 실행-정상적으로 작동.
- * 11/12 14:11 데이터베이스 update 구문 추가 성공. ---Insert-Update 구분or적절한 조합 통한 코드 수정,catch 수정 필요.
- *  ~ 18:00 ~ 공유된 데이터베이스 사용자로 접속하기 위한 getConnection 수정, 수정된 getConnection 기반으로 데이터베이스 조회.
-  * - 위의 코드로 기존의 Create,Drop,Test,PingTest,Main 전체 수정_ 성공. 깃허브에 업로드__
+  * 11/10 2:03 개별 데스크탑용 클라이언트 프로토타입 코드 완성.
+  * 11/10 19:22 테스트용 노트북에 패치 후 실행-정상적으로 작동.
+  * 11/12 14:11 데이터베이스 update 구문 추가 성공. ---Insert-Update 구분or적절한 조합 통한 코드 수정,catch 수정 필요.
+  *  ~ 18:00 ~ 공유된 데이터베이스 사용자로 접속하기 위한 getConnection 수정, 수정된 getConnection 기반으로 데이터베이스 조회.
+    * - 위의 코드로 기존의 Create,Drop,Test,PingTest,Main 전체 수정_ 성공. 깃허브에 업로드__
 ### --------------
 
 
