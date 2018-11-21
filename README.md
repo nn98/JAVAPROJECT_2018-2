@@ -32,15 +32,15 @@
   -  ~ 14:11 클라이언트 update문 수정 성공- 정상 실행. Insert문 반복될 경우 Exception ---catch 수정 필요.
   -  ~ 14:52 홍은지 교수님께 질문- 해결 실패. ---차후 문성현 교수님께 질문
   -  ~ 15:28 password 배제 후 전체 IP 개방형 사용자 추가 완료. ---방화벽 해지, my.ini_bind-address 제거 필요.
-    -참고 __ http://dogcowking.tistory.com/154 , https://idchowto.com/?p=11068 ,  
+    - 참고 __ http://dogcowking.tistory.com/154 , https://idchowto.com/?p=11068 ,  
 https://zetawiki.com/wiki/MySQL_%EC%9B%90%EA%B2%A9_%EC%A0%91%EC%86%8D_%ED%97%88%EC%9A%A9
     - 검색어 : mysql 외부 접속 허용
   -  ~ 18:00 ~ ---Password 설정 Identified by로 수행.--- my.ini 수정 완료, 방화벽 해지. Mysql PC간 데이터베이스 접근 테스트.
-    -참고 __ http://bblog.tistory.com/316 (password) , https://serverfault.com/questions/546281/mysql-bind-address-windows-error-1067-my-ini (bind-address) , http://savour75.tistory.com/21 (방화벽 해제)
+    - 참고 __ http://bblog.tistory.com/316 (password) , https://serverfault.com/questions/546281/mysql-bind-address-windows-error-1067-my-ini (bind-address) , http://savour75.tistory.com/21 (방화벽 해제)
     - 테스트용 서버 PC에 외부 유저 설정.(notting@172...) 명령 프롬프트 상에서 액세스 시도-성공(SQL 서버 디렉토리에서 cmd 실행.)
-    -참고 __ http://myblog.opendocs.co.kr/archives/1591 , https://zetawiki.com/wiki/MySQL_%EC%9B%90%EA%B2%A9_%EC%A0%91%EC%86%8D , http://godblessyk.tistory.com/entry/MySQL-%EC%9B%90%EA%B2%A9%EC%A0%91%EC%86%8D%ED%97%88%EC%9A%A9%EA%B3%BC-%EC%9B%90%EA%B2%A9%EC%A0%91%EC%86%8D%ED%99%95%EC%9D%B8 
+    - 참고 __ http://myblog.opendocs.co.kr/archives/1591 , https://zetawiki.com/wiki/MySQL_%EC%9B%90%EA%B2%A9_%EC%A0%91%EC%86%8D , http://godblessyk.tistory.com/entry/MySQL-%EC%9B%90%EA%B2%A9%EC%A0%91%EC%86%8D%ED%97%88%EC%9A%A9%EA%B3%BC-%EC%9B%90%EA%B2%A9%EC%A0%91%EC%86%8D%ED%99%95%EC%9D%B8 
     - 성공한 유저 기반으로 JAVA PingTest 예시코드 수정- 
-    -참고 __ https://blog.outsider.ne.kr/6
+    - 참고 __ https://blog.outsider.ne.kr/6
 getConnection("jdbc:mysql://localhost:3306/?serverTimezone=UTC&useSSL=false &allowPublicKeyRetrieval=true","root","********");
 ->getConnection("jdbc:mysql://172.30.4.70:3306/?serverTimezone=UTC&useSSL=false &allowPublicKeyRetrieval=true","notting","*********");
     - 성공. 깃허브에 업로드___
