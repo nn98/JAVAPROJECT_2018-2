@@ -1,7 +1,7 @@
 # JAVAPROJECT_2018-2
 18년도 2학기 자바프로젝트  
 <https://docs.google.com/document/d/1RZZauYzxfdyCoadlsPdHkOPiX5C98YlqXfCFtMt5Xcc/edit?usp=sharing>
-
+11/22 11:30 까지의 ReadMe.md 작성상황 공유. 이후 개별작성 후 Marge
 * * *
 * java part
   * 11/10 2:03 개별 데스크탑용 클라이언트 프로토타입 코드 완성.
