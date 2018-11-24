@@ -3,8 +3,8 @@ public class JdbcTest {
 	public static void main(String[] args) {
 		try {
 			Connection con = null;
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/?serverTimezone=UTC&useSSL=false &allowPublicKeyRetrieval=true",
-					"Y_Home", "q192837q*");
+			con = DriverManager.getConnection("jdbc:mysql://172.16.4.206:3306/?serverTimezone=UTC&useSSL=false &allowPublicKeyRetrieval=true",
+					"notting", "testing00");
 			java.sql.Statement st = null;
 			ResultSet rs = null;
 			st = con.createStatement();

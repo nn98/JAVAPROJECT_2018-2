@@ -8,8 +8,8 @@ public class PingTest {
         String sql;
         try {
             Connection con = null;
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/?serverTimezone=UTC&useSSL=false &allowPublicKeyRetrieval=true",
-					"Y_Home", "q192837q*");
+            con = DriverManager.getConnection("jdbc:mysql://172.16.4.206:3306/?serverTimezone=UTC&useSSL=false &allowPublicKeyRetrieval=true",
+					"Project", "testing00");
             java.sql.Statement st = null;
             ResultSet rs = null;
             String basicPc="pc-";
@@ -17,7 +17,7 @@ public class PingTest {
             int PC_STATUS=-1;
             String addressName = "mycomputer";
             st = con.createStatement();
-            st.executeQuery("use 6202_pc;");
+            st.executeQuery("use project;");
             while (true) {
                 try {
                     Thread.sleep(3000);
