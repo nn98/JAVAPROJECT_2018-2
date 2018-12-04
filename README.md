@@ -1,6 +1,8 @@
 # JAVAPROJECT_2018-2
 18년도 2학기 자바프로젝트  
 <https://docs.google.com/document/d/1RZZauYzxfdyCoadlsPdHkOPiX5C98YlqXfCFtMt5Xcc/edit?usp=sharing>
+
+
 11/22 11:30 까지의 ReadMe.md 작성상황 공유. 이후 개별작성 후 Marge
 * * *
 * java part
@@ -44,7 +46,11 @@
     - 성공. 깃허브에 업로드___
   - 11/19 12:10 서버용 데이터베이스 재설치, 동일 네트워크 한정 접근 가능 확인. Node 터미널에서 데이터 수신 성공
     - ~18:49 노드상 전송받은 데이터 필요한 형태로 재구축 시도 ---간헐적으로 발생하는 노드 기본설정 에러 확인 해결 필요.
-  
+  - 11/27 13:10 ~ getLocalHostLANAddress() 메소드를 활용한 개별 자바 클라이언트 테스트- 성공. ---LANschool 활용해 전체 데스크탑 테스트
+  - 12/3 16:32 ~ 데이터베이스 노트북 교체, 재설정__ 서버 포트 변경 필요? [mysql 포트 변경](https://skylit.tistory.com/253) 3306 포트 외부 네트워크 차단 가능성
+    - 18:22 ~ 재설정 데이터베이스로 연결 시도-성공. 안드로이드 클라이언트 구축 후 Node 연동 작업 필요.
+  - 12/4 12:01 ~ 포트 변경 후 연결 시도(0227port)- 6202 개별 데스크탑에서 연결 성공, Node 개발환경 구축된 노트북에서 연결 실패.
+    - 14:38 ~ 포트 초기화와 재설정 시도 중 에러 발생. mysql 로그인 불가 ---재설치 필요..
 * * *
 - Node.js part
   - 11/19 19:04 node.js이용 데이터베이스 특정값 터미널 리턴 성공
@@ -52,3 +58,4 @@
 
 * * *
 - android studio part
+ - 11/26 16:20~ 안드로이드 클라이언트 프로토타입 구현시도-레이아웃 전환과 인텐트 값 전달, 이미지 버튼. [Github Repository](https://github.com/nn98/SJ_Implements)
