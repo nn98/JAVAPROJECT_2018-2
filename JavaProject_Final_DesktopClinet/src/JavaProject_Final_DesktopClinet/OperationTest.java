@@ -1,3 +1,4 @@
+
 package JavaProject_Final_DesktopClinet;
 
 import java.sql.Connection;
@@ -14,7 +15,7 @@ public class OperationTest {
 		Scanner sc=new Scanner(System.in);
 		try {
 			Connection con = null;
-			con = DriverManager.getConnection("jdbc:mysql://localhost:1206/?serverTimezone=UTC&useSSL=false &allowPublicKeyRetrieval=true",
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/?serverTimezone=UTC&useSSL=false &allowPublicKeyRetrieval=true",
 					"Project", "testing00");
 			java.sql.Statement st = null;
 			ResultSet rs = null;
@@ -26,7 +27,7 @@ public class OperationTest {
 				t=sc.nextInt();
 				switch(t) {
 				case 1:
-					sql="select * from pc;";
+					sql="select * from pc";
 					rs=st.executeQuery(sql);
 					while(rs.next()) {
 						String n=rs.getString("pc_number");
@@ -43,8 +44,8 @@ public class OperationTest {
 					int target=sc.nextInt();
 					switch(target) {
 					case 1:
-						System.out.print("insert into pc values (?,?,?);");
-						sql = "insert into pc values (?,?,?);";   
+						System.out.print("insert into pc values (?,?,?)");
+						sql = "insert into pc values (?,?,?)";   
 						pst = con.prepareStatement(sql);
 						System.out.print("\nvalue 1=");
 						ex=sc.nextInt();
@@ -68,8 +69,8 @@ public class OperationTest {
 						System.out.print("select increse column. 3?");
 						int third=sc.nextInt();
 						 */
-						System.out.print("insert into pc values (?,?,?);");
-						sql = "insert into pc values (?,?,?);;";  
+						System.out.print("insert into pc values (?,?,?)");
+						sql = "insert into pc values (?,?,?)";  
 						pst = con.prepareStatement(sql);
 						System.out.print("\nvalue 1=");
 						int first=sc.nextInt();
@@ -81,7 +82,7 @@ public class OperationTest {
 						int third=sc.nextInt();
 						pst.setInt(3, third);
 						pst.execute();
-						for(int i=1;i<=count;i++) {
+						for(int i=1;i<count;i++) {
 							pst.setInt(1, first+i);
 							pst.execute();
 						}
@@ -94,24 +95,24 @@ public class OperationTest {
 					target=sc.nextInt();
 					switch(target) {
 					case 1:
-						System.out.print("delete from pc where pc_number=(?);");
-						sql = "delete from pc where pc_number=(?);";    
+						System.out.print("delete from pc where pc_number=(?)");
+						sql = "delete from pc where pc_number=(?)";    
 						ex=sc.nextInt();
 						pst = con.prepareStatement(sql);
 						pst.setInt(1, ex);
 						pst.execute();
 						break;
 					case 2:
-						System.out.print("delete from pc where pc_status=(?);");
-						sql = "delete from pc where pc_status=(?);";  
+						System.out.print("delete from pc where pc_status=(?)");
+						sql = "delete from pc where pc_status=(?)";  
 						ex=sc.nextInt();
 						pst = con.prepareStatement(sql);
 						pst.setInt(1, ex);
 						pst.execute();
 						break;
 					case 3:
-						System.out.print("delete from pc where pc_temp=(?);");
-						sql = "delete from pc where pc_temp=(?);";    
+						System.out.print("delete from pc where pc_temp=(?)");
+						sql = "delete from pc where pc_temp=(?)";    
 						ex=sc.nextInt();
 						pst = con.prepareStatement(sql);
 						pst.setInt(1, ex);
@@ -121,7 +122,7 @@ public class OperationTest {
 					System.out.println("Operation success.");
 					break;
 				default:
-					
+
 				}
 			}
 		}

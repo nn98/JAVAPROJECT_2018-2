@@ -1,22 +1,21 @@
-
 package JavaProject_Final_DesktopClinet;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.sql.*;
 
-public class PingTest {
+public class SepPingTest {	//개별화, 타겟 데스크탑에 개별적으로 설치 예정
 
     public static void main(String[] args) throws UnknownHostException {
         String ip=getLocalHostLANAddress();	//현재 컴퓨터 IP 불러오기
         int PC_NUMBER=Integer.parseInt(ip.substring(ip.length()-2, ip.length()))-10;	//PC_NUMBER 추출(6202 기준)
         int PC_STATUS=-1;					//PC_STATUS 기본값 정의
-        String addressName = "PC-"+PC_NUMBER;	//출력용 PC_NUMBER. 이후 주석처리
+        String addressName = "PC_"+PC_NUMBER;	//출력용 PC_NUMBER. 이후 주석처리
         try {
         	String sql;							//sql 초기화
             Connection con = null;				//sql 커넥션 초기화
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/?serverTimezone=UTC&useSSL=false &allowPublicKeyRetrieval=true",
-					"Project", "testing00");	//sql 커넥션 정의
+            con = DriverManager.getConnection("jdbc:mysql://58.121.52.142:3306/?serverTimezone=UTC&useSSL=false &allowPublicKeyRetrieval=true",
+					"Project", "testing00");	//sql 커넥션 정의. 서버 IP 수정
             java.sql.Statement st = null;		//sql 스테이트먼트 초기화
             st = con.createStatement();			//sql 스테이트먼트 정의
             st.executeQuery("use pj_pc;");		//프로젝트용 데이터베이스 사용
