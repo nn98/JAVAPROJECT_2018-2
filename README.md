@@ -1,14 +1,13 @@
 # JAVAPROJECT_2018-2
 18년도 2학기 자바프로젝트  
-<https://docs.google.com/document/d/1RZZauYzxfdyCoadlsPdHkOPiX5C98YlqXfCFtMt5Xcc/edit?usp=sharing>
-### --------------
-#### java part
 
-### --------------
-#### mysql part
-#### 11/8 1:02 JDBC 데이터베이스 접근 오류-java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed.
-#### URL String에 &allowPublicKeyRetrieval=true 추가-해결.
-#### 11/8 3:11 JDBC mysql 연동 프로젝트 업로드-단순 연결+데이터베이스 목록 조회.  
+* * *
 
-### --------------
-#### android studio part
+  - 6202 강의실 내부 데스크탑 간의 Ping Reachable 테스트 결과 접근 거부되는 데스크탑들 존재.(pc 4~pc 10, pc 22~31 등.)
+  - 고장 데스크탑 교체 등의 이유로 로컬 이더넷 포트가 변경된 것으로 추정.
+  - 해결 시도-불가능 결론.
+  - 각 데스크탑에 개별화된 클라이언트 설치하는 방식으로 변경
+  - 기존 PingTest(단일 데스크탑에서 전체 데스크탑 모두를 Reachable 테스트) -> 
+  - 개별화 SepPingTest(단일 데스크탑에서 자신의 아이피만 Reachable 테스트).
+  - 기존 소스코드 파일 보존, 신규 코드 구분, 깃허브 사용 숙지를 위해 Sep 브랜치 생성 후 Push.
+  - 이후 Final_Testing 브랜치에서 최종 데이터베이스 조작 클라이언트 구현.
